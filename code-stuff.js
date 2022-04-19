@@ -1,9 +1,17 @@
-let bgText = [
+const bgText = [
     "An open field",
     "A dilapidated castle",
     "A gloomy cave",
     "A glimmering city",
 ]
+
+// setting up a set of items to be generated
+const bgTheme = [
+    "Fantasy",
+    "Modern",
+    "SciFi",
+]
+const bgType = []
 
 let generateButton = document.getElementById("generate-button");
 
