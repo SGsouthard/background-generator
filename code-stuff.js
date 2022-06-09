@@ -6,7 +6,7 @@ const bgText = [
 ]
 
 // setting up a set of items to be generated
-const bgTheme = [
+const bgGenre = [
     "Fantasy",
     "Modern",
     "SciFi",
@@ -17,8 +17,10 @@ let generateButton = document.getElementById("generate-button");
 
 generateButton.onclick = function() {
     let textBlock = document.getElementById("text-block");
+    let variableLine = document.getElementById("genre-variable");
     textBlock.textContent = bgText[Math.floor(Math.random() * bgText.length)];
+    variableLine.textContent = bgGenre[Math.floor(Math.random() * bgGenre.length)];
 
 }
 
-console.log("JS is connected and online")
+console.log("JS is connected and online") 
