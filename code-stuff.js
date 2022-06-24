@@ -13,6 +13,7 @@ const bgGenre = [
     "Medieval",
     "Horror",
     "Mystery",
+    "Noir",
 ]
 const bgLocation = [
     "Cafe",
@@ -36,5 +37,7 @@ generateButton.onclick = function() {
     locationLine.textContent = bgLocation[Math.floor(Math.random() * bgLocation.length)];
 
 }
+
+
 
 console.log("JS is connected and online") 
