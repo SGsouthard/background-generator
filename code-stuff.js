@@ -19,16 +19,21 @@ const bgLocation = [
     "School",
     "Apartment",
     "House",
-    "Al"
+    "City",
+    "Town",
+    "Beach",
+
 ]
 
 let generateButton = document.getElementById("generate-button");
 
 generateButton.onclick = function() {
     // let textBlock = document.getElementById("text-block");
-    let variableLine = document.getElementById("genre-variable");
+    let genreLine = document.getElementById("genre-variable");
+    let locationLine = document.getElementById("location-variable");
     // textBlock.textContent = bgText[Math.floor(Math.random() * bgText.length)];
-    variableLine.textContent = bgGenre[Math.floor(Math.random() * bgGenre.length)];
+    genreLine.textContent = bgGenre[Math.floor(Math.random() * bgGenre.length)];
+    locationLine.textContent = bgLocation[Math.floor(Math.random() * bgLocation.length)];
 
 }
 
