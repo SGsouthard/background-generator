@@ -27,16 +27,27 @@ const bgLocation = [
 ]
 
 let generateButton = document.getElementById("generate-button");
+let genreLine = document.getElementById("genre-variable");
+let locationLine = document.getElementById("location-variable");
 
 generateButton.onclick = function() {
-    // let textBlock = document.getElementById("text-block");
-    let genreLine = document.getElementById("genre-variable");
-    let locationLine = document.getElementById("location-variable");
-    // textBlock.textContent = bgText[Math.floor(Math.random() * bgText.length)];
     genreLine.textContent = bgGenre[Math.floor(Math.random() * bgGenre.length)];
     locationLine.textContent = bgLocation[Math.floor(Math.random() * bgLocation.length)];
 
 }
+
+function animateWords() {
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 
