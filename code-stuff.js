@@ -45,7 +45,8 @@ generateButton.onclick = function() {
 }
 
 startAgainButton.onclick = function() {
-    location.reload()
+    // animateAll();
+    location.reload();
 }
 
 function animateGenre() {
@@ -64,6 +65,10 @@ function stopAnimateWordsLocation() {
     clearInterval(intervalAnimateLocation);
 }
 
+function animateAll() {
+    const intervalAnimateGenre = setInterval(animateGenre, 50);
+    const intervalAnimateLocation = setInterval(animateLocation, 50);
+}
 const intervalAnimateGenre = setInterval(animateGenre, 50);
 const intervalAnimateLocation = setInterval(animateLocation, 50);
 
