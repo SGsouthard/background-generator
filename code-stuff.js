@@ -33,12 +33,29 @@ let locationLine = document.getElementById("location-variable");
 generateButton.onclick = function() {
     genreLine.textContent = bgGenre[Math.floor(Math.random() * bgGenre.length)];
     locationLine.textContent = bgLocation[Math.floor(Math.random() * bgLocation.length)];
-
+    const stopAnimatingGenre = setTimeout(stopAnimateWordsGenre,500);
+    const stopAnimatingLocation = setTimeout(stopAnimateWordsLocation,1000);
 }
 
-function animateWords() {
-    
+function animateGenre() {
+    genreLine.textContent = bgGenre[Math.floor(Math.random() * bgGenre.length)];
 }
+
+function animateLocation() {
+    locationLine.textContent = bgLocation[Math.floor(Math.random() * bgLocation.length)];
+}
+
+function stopAnimateWordsGenre() {
+    clearInterval(intervalAnimateGenre);
+}
+
+function stopAnimateWordsLocation() {
+    clearInterval(intervalAnimateLocation);
+}
+
+const intervalAnimateGenre = setInterval(animateGenre, 50);
+const intervalAnimateLocation = setInterval(animateLocation, 50);
+
 
 
 
