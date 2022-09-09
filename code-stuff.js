@@ -26,10 +26,42 @@ const bgLocation = [
 
 ]
 
+const bgColorScheme = [
+    "Monochromatic",
+    "Analogous",
+    "Complementary",
+    "Triadic",
+    "Split-complementary",
+    "Tetradic"
+]
+
+const bgColorMain = [
+    "Black",
+    "Grey",
+    "Red",
+    "Orange",
+    "Yellow",
+    "Green",
+    "Blue",
+    "Purple",
+    "Pink"
+]
+
+const bgPerspective = [
+    "First-Point Perspective",
+    "Second-Point Perspective",
+    "Third-Point Perspective"
+]
+
 let generateButton = document.getElementById("generate-button");
 let startAgainButton = document.getElementById("start-again")
 let genreLine = document.getElementById("genre-variable");
 let locationLine = document.getElementById("location-variable");
+let extrasButton = document.getElementById("extras-button");
+let extraStuffDiv = document.getElementById("extra-stuff");
+let colorSchemeVariable = document.getElementById("color-scheme-variable");
+let colorMainVariable = document.getElementById("color-main-variable");
+let perspectiveVariable = document.getElementById("perspective-variable");
 let hitOnce = false;
 
 generateButton.onclick = function() {
@@ -41,11 +73,17 @@ generateButton.onclick = function() {
     if (hitOnce = true) {
         startAgainButton.classList.remove('hidden');
         generateButton.classList.add('hidden');
+        extrasButton.classList.remove('hidden');
+        hitOnce = false;
     }
 }
 
+extrasButton.onclick = function() {
+    extraStuffDiv.classList.remove('hidden');
+
+}
+
 startAgainButton.onclick = function() {
-    // animateAll();
     location.reload();
 }
 
@@ -55,6 +93,18 @@ function animateGenre() {
 
 function animateLocation() {
     locationLine.textContent = bgLocation[Math.floor(Math.random() * bgLocation.length)];
+}
+
+function animateColorScheme() {
+    colorSchemeVariable.textContent = bgColorScheme[Math.floor(Math.random() * bgColorScheme.length)];
+}
+
+function animateColorMain() {
+    colorMainVariable.textContent = bgColorMain[Math.floor(Math.random() * bgColorMain.length)];
+}
+
+function animatePerspective() {
+    perspectiveVariable.textContent = bgPerspective[Math.floor(Math.random() * bgPerspective.length)];
 }
 
 function stopAnimateWordsGenre() {
@@ -71,7 +121,9 @@ function animateAll() {
 }
 const intervalAnimateGenre = setInterval(animateGenre, 50);
 const intervalAnimateLocation = setInterval(animateLocation, 50);
-
+const intervalAnimateColorScheme = setInterval(animateColorScheme, 50);
+const intervalAnimateColorMain = setInterval(animateColorMain, 50);
+const intervalAnimatePerspective = setInterval(animatePerspective, 50);
 
 
 
