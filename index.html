@@ -8,14 +8,10 @@
     <link rel="stylesheet" href="./style-stuff.css">
 </head>
 <body>
+    <div class="mobile-size">
     <h1>
-        Stuck on what to draw for an environment? We'll generate an idea for you!
+        Background Generator
     </h1>
-
-    <button id="generate-button">GENERATE</button>
-    <!-- <p id="text-block">
-        text block from generated text will arrive here
-    </p> -->
 
     <div id="theme-block">
         <p class="category-line">
@@ -33,23 +29,25 @@
     <button class="hidden" id="extras-button">EXTRAS</button>
 
     <div id="extra-stuff">
-        <p class="category-line">
+        <p>
             <span class="variable-line" id="color-scheme-variable">
                 <!-- randomized thing goes here -->
             </span>
         </p>
-        <p class="category-line">
+        <p>
             <span class="variable-line" id="color-main-variable">
                 <!-- randomized thing goes here -->
             </span>
         </p>
-        <p class="category-line">
+        <p>
             <span class="variable-line" id="perspective-variable">
                 <!-- randomized thing goes here -->
             </span>
         </p>
     </div>
+    <button id="generate-button">GENERATE</button>
     <button class="hidden" id="start-again">TRY AGAIN?</button>
+    </div>
 
     <!-- script -->
     <script src="./code-stuff.js"></script>

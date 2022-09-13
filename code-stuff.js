@@ -14,6 +14,11 @@ const bgGenre = [
     "Horror",
     "Mystery",
     "Noir",
+    "Cyber Punk",
+    "Steam Punk",
+    "Romantic",
+    "Spooky",
+    
 ]
 const bgLocation = [
     "Cafe",
@@ -23,6 +28,13 @@ const bgLocation = [
     "City",
     "Town",
     "Beach",
+    "Bedroom",
+    "Kitchen",
+    "Living Room",
+    "Office",
+    "Dining Hall",
+    "Dining Room",
+    "Classroom",
 
 ]
 

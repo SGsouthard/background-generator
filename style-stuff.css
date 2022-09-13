@@ -1,17 +1,21 @@
+
+
+.mobile-size {
+    background-color: yellow;
+    width: 350px;
+}
+
 .hidden {
     display: none;
+}
+
+.category-line {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
 }
 
 #theme-block {
     display: flex;
     flex-direction: row;
-}
-
-#extra-stuff {
-    display: flex;
-    flex-direction: column;
-}
-
-p {
-    padding: 5px;
 }
