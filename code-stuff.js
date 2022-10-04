@@ -18,6 +18,8 @@ const bgGenre = [
     "Steam Punk",
     "Romantic",
     "Spooky",
+    "Abandoned",
+    
     
 ]
 const bgLocation = [
@@ -35,6 +37,7 @@ const bgLocation = [
     "Dining Hall",
     "Dining Room",
     "Classroom",
+    "Forest",
 
 ]
 
@@ -73,6 +76,7 @@ let colorSchemeVariable = document.getElementById("color-scheme-variable");
 let colorMainVariable = document.getElementById("color-main-variable");
 let perspectiveVariable = document.getElementById("perspective-variable");
 let generateExtras = document.getElementById("generate-extras");
+let extrasWindow = document.getElementById('extras-window');
 let hitOnce = false;
 
 generateButton.onclick = function() {
@@ -95,6 +99,7 @@ generateButton.onclick = function() {
 //trying to make the Extras generate/stop
 extrasButton.onclick = function() {
     extrasButton.classList.add('hidden');
+    extrasWindow.classList.remove('hidden');
     colorSchemeVariable.textContent = bgColorScheme[Math.floor(Math.random() * bgColorScheme.length)] + " color scheme";
     colorMainVariable.textContent = bgColorMain[Math.floor(Math.random() * bgColorMain.length)] + " as a main color";
     perspectiveVariable.textContent = "In " + bgPerspective[Math.floor(Math.random() * bgPerspective.length)];

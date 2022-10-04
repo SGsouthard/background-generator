@@ -8,47 +8,55 @@
     <link rel="stylesheet" href="./style-stuff.css">
 </head>
 <body>
-    <div class="mobile-size">
-    <h1>
-        Background Generator
-    </h1>
+    <div class="window-piece">
+        <p id="header-style">
+            Background Generator
+        </p>
 
-    <div id="theme-block">
-        <p class="category-line">
-            <span class="variable-line" id="genre-variable">
-                <!-- randomized thing goes here -->
-            </span>
-        </p>
-        <p class="category-line">
-            <span class="variable-line" id="location-variable">
-                <!-- randomized thing goes here -->
-            </span>
-        </p>
+        <div class="inner-block" id="theme-block">
+            <p class="category-line">
+                <span class="variable-line" id="genre-variable">
+                    <!-- randomized thing goes here -->
+                </span>
+            </p>
+            <p class="category-line">
+                <span class="variable-line" id="location-variable">
+                    <!-- randomized thing goes here -->
+                </span>
+            </p>
+        </div>
+
+        
+        <div class="button-set">
+            <button class="button-set" id="generate-button">GENERATE</button>
+            <button class="hidden button-set" id="start-again">TRY AGAIN?</button>
+        </div>
+        <button class="hidden button-set" id="extras-button">EXTRAS</button>
     </div>
 
-    <button class="hidden" id="extras-button">EXTRAS</button>
-
-    <div id="extra-stuff">
-        <p>
-            <span class="variable-line" id="color-scheme-variable">
-                <!-- randomized thing goes here -->
-            </span>
+    <div class="window-piece hidden" id="extras-window">
+        <p id="header-style">
+            Extras
         </p>
-        <p>
-            <span class="variable-line" id="color-main-variable">
-                <!-- randomized thing goes here -->
-            </span>
-        </p>
-        <p>
-            <span class="variable-line" id="perspective-variable">
-                <!-- randomized thing goes here -->
-            </span>
-        </p>
+        
+        <div class="inner-block" id="extra-stuff">
+            <p>
+                <span class="variable-line" id="color-scheme-variable">
+                    <!-- randomized thing goes here -->
+                </span>
+            </p>
+            <p>
+                <span class="variable-line" id="color-main-variable">
+                    <!-- randomized thing goes here -->
+                </span>
+            </p>
+            <p>
+                <span class="variable-line" id="perspective-variable">
+                    <!-- randomized thing goes here -->
+                </span>
+            </p>
+        </div>
     </div>
-    <button id="generate-button">GENERATE</button>
-    <button class="hidden" id="start-again">TRY AGAIN?</button>
-    </div>
-
     <!-- script -->
     <script src="./code-stuff.js"></script>
 </body>
