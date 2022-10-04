@@ -2,8 +2,6 @@ html {
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
     padding-top: 20px;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 button {
