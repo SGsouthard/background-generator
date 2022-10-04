@@ -14,10 +14,14 @@ button {
     
 }
 
+button:hover {
+    background-color: rgb(168, 168, 168);
+}
+
 button:active {
     border-style: inset;
     border-width: 3px;
-    background-color: rgb(168, 168, 168);
+    background-color: rgb(213, 213, 213);
 }
 
 .button-set {
