@@ -1,6 +1,7 @@
 html {
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
+    padding-top: 20px;
     /* display: flex; */
     /* justify-content: center; */
 }
@@ -29,7 +30,7 @@ button:active {
 }
 
 #header-style {
-    background-color: blue;
+    background-image: linear-gradient(to right, blue, rgb(4, 127, 203) );
     color: white;
     position: relative;
     bottom: 16px;
