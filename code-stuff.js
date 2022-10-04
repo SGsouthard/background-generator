@@ -48,8 +48,6 @@ const bgColorScheme = [
 ]
 
 const bgColorMain = [
-    "Black",
-    "Grey",
     "Red",
     "Orange",
     "Yellow",
